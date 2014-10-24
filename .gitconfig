@@ -1,0 +1,10 @@
+[user]
+	name = Joe Sortelli
+	email = joe@sortelli.com
+[color]
+	ui = auto
+[core]
+	editor = /usr/bin/vim
+	excludesfile = ~/.gitignore_global
+[include]
+	path = .gitconfig_local
