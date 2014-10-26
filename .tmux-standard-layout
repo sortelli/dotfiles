@@ -1,0 +1,5 @@
+select-pane  -t 0
+split-window -h
+select-pane  -t 1
+split-window -v
+select-pane  -t 0
