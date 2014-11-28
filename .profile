@@ -2,6 +2,7 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PS1='% '
 export CLICOLOR=1
 export LSCOLORS=cxfxexdxbxegedabaggxad
+export EDITOR=`which vim`
 set -o vi
 
 alias hlog='git log --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
