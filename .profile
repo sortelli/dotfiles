@@ -10,6 +10,16 @@ alias xlog='git log --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(r
 alias slog='git log --stat --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
 alias mlog='git log --all --graph --format="%C(yellow)%h %C(red)%d %C(reset)%s"'
 
+if [ -n "$BASH_VERSION" ]; then
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
 if [ -x "/usr/libexec/java_home" ]; then
   JAVA_HOME=`/usr/libexec/java_home -v 1.7`
   export JAVA_HOME
