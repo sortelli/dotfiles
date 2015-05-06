@@ -34,3 +34,7 @@ fi
 if [ -d "/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin" ]; then
   PATH="$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin"
 fi
+
+if [ -s "$HOME/.profile_local" ]; then
+  . "$HOME/.profile_local"
+fi
