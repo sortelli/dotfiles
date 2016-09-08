@@ -42,3 +42,8 @@ fi
 if [ -s "$HOME/.profile_local" ]; then
   . "$HOME/.profile_local"
 fi
+
+if [ -d "$HOME/gocode" ]; then
+  GOPATH="$HOME/gocode"
+  export GOPATH
+fi
