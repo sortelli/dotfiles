@@ -43,11 +43,15 @@ if [ -s "$HOME/.profile_local" ]; then
   . "$HOME/.profile_local"
 fi
 
-if [ -d "$HOME/gocode" ]; then
-  GOPATH="$HOME/gocode"
+if [ -d "$HOME/go" ]; then
+  GOPATH="$HOME/go"
   export GOPATH
 fi
 
-if [ -d "$HOME/gocode/bin" ]; then
-  export PATH="$PATH:$HOME/gocode/bin"
+if [ -d "$HOME/go/bin" ]; then
+  export PATH="$PATH:$HOME/go/bin"
+fi
+
+if [ -d "/usr/local/opt/go/libexec/bin" ]; then
+  export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 fi
