@@ -55,3 +55,8 @@ fi
 if [ -d "/usr/local/opt/go/libexec/bin" ]; then
   export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 fi
+
+if [ -d "$HOME/.nvm" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "$NVM_DIR/nvm.sh"
+fi
