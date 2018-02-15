@@ -1,3 +1,5 @@
+let g:jsx_ext_required = 0
+
 :colorscheme torte
 :filetype plugin on
 :syn on
