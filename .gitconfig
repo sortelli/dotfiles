@@ -8,3 +8,5 @@
 	excludesfile = ~/.gitignore_global
 [include]
 	path = .gitconfig_local
+[url "git@github.com:"]
+	insteadOf = https://github.com/
