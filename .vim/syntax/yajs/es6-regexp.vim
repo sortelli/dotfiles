@@ -1,5 +1,5 @@
 syntax keyword javascriptGlobal RegExp nextgroup=javascriptGlobalRegExpDot,javascriptFuncCallArg
-syntax match   javascriptGlobalRegExpDot /\./ contained nextgroup=javascriptRegExpStaticProp
+syntax match   javascriptGlobalRegExpDot /\./ contained nextgroup=javascriptRegExpStaticProp,javascriptProp,javascriptMethod
 syntax keyword javascriptRegExpStaticProp contained lastIndex
 if exists("did_javascript_hilink") | HiLink javascriptRegExpStaticProp Keyword
 endif

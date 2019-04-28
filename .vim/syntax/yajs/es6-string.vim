@@ -1,15 +1,17 @@
 syntax keyword javascriptGlobal String nextgroup=javascriptGlobalStringDot,javascriptFuncCallArg
-syntax match   javascriptGlobalStringDot /\./ contained nextgroup=javascriptStringStaticMethod
-syntax keyword javascriptStringStaticMethod contained fromCharCode fromCodePoint nextgroup=javascriptFuncCallArg
+syntax match   javascriptGlobalStringDot /\./ contained nextgroup=javascriptStringStaticMethod,javascriptProp,javascriptMethod
+syntax keyword javascriptStringStaticMethod contained fromCharCode fromCodePoint raw nextgroup=javascriptFuncCallArg
 if exists("did_javascript_hilink") | HiLink javascriptStringStaticMethod Keyword
 endif
 syntax keyword javascriptStringMethod contained anchor charAt charCodeAt codePointAt nextgroup=javascriptFuncCallArg
 syntax keyword javascriptStringMethod contained concat endsWith includes indexOf lastIndexOf nextgroup=javascriptFuncCallArg
-syntax keyword javascriptStringMethod contained link localeCompare match normalize nextgroup=javascriptFuncCallArg
-syntax keyword javascriptStringMethod contained repeat replace search slice split nextgroup=javascriptFuncCallArg
-syntax keyword javascriptStringMethod contained startsWith substr substring toLocaleLowerCase nextgroup=javascriptFuncCallArg
-syntax keyword javascriptStringMethod contained toLocaleUpperCase toLowerCase toString nextgroup=javascriptFuncCallArg
-syntax keyword javascriptStringMethod contained toUpperCase trim valueOf nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained link localeCompare match matchAll nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained normalize padStart padEnd repeat replace nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained search slice split startsWith substr nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained substring toLocaleLowerCase toLocaleUpperCase nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained toLowerCase toString toUpperCase trim nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained trimStart trimEnd trimLeft trimRight nextgroup=javascriptFuncCallArg
+syntax keyword javascriptStringMethod contained valueOf nextgroup=javascriptFuncCallArg
 syntax cluster props add=javascriptStringMethod
 if exists("did_javascript_hilink") | HiLink javascriptStringMethod Keyword
 endif

@@ -1,5 +1,5 @@
 syntax keyword javascriptGlobal Math nextgroup=javascriptGlobalMathDot,javascriptFuncCallArg
-syntax match   javascriptGlobalMathDot /\./ contained nextgroup=javascriptMathStaticProp,javascriptMathStaticMethod
+syntax match   javascriptGlobalMathDot /\./ contained nextgroup=javascriptMathStaticProp,javascriptMathStaticMethod,javascriptProp,javascriptMethod
 syntax keyword javascriptMathStaticProp contained E LN10 LN2 LOG10E LOG2E PI SQRT1_2
 syntax keyword javascriptMathStaticProp contained SQRT2
 if exists("did_javascript_hilink") | HiLink javascriptMathStaticProp Keyword

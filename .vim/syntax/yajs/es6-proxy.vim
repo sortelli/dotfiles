@@ -1,4 +1,4 @@
-syntax keyword javascriptGlobal Proxy
+syntax keyword javascriptGlobal Proxy nextgroup=@javascriptAfterIdentifier
 syntax keyword javascriptProxyAPI contained getOwnPropertyDescriptor getOwnPropertyNames
 syntax keyword javascriptProxyAPI contained defineProperty deleteProperty freeze seal
 syntax keyword javascriptProxyAPI contained preventExtensions has hasOwn get set enumerate

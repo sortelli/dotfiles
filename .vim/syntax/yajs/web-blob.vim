@@ -1,5 +1,5 @@
 syntax keyword javascriptGlobal URL nextgroup=javascriptGlobalURLDot,javascriptFuncCallArg
-syntax match   javascriptGlobalURLDot /\./ contained nextgroup=javascriptURLStaticMethod
+syntax match   javascriptGlobalURLDot /\./ contained nextgroup=javascriptURLStaticMethod,javascriptProp,javascriptMethod
 syntax keyword javascriptGlobal Blob BlobBuilder File FileReader FileReaderSync URLUtils
 syntax keyword javascriptFileMethod contained readAsArrayBuffer readAsBinaryString nextgroup=javascriptFuncCallArg
 syntax keyword javascriptFileMethod contained readAsDataURL readAsText nextgroup=javascriptFuncCallArg
