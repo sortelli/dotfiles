@@ -6,7 +6,7 @@ syntax keyword javascriptServiceWorkerMethod contained register getRegistration 
 syntax cluster props add=javascriptServiceWorkerMethod
 if exists("did_javascript_hilink") | HiLink javascriptServiceWorkerMethod Keyword
 endif
-syntax keyword javascriptGlobal Cache
+syntax keyword javascriptGlobal Cache nextgroup=@javascriptAfterIdentifier
 syntax keyword javascriptCacheMethod contained match matchAll add addAll put delete nextgroup=javascriptFuncCallArg
 syntax keyword javascriptCacheMethod contained keys nextgroup=javascriptFuncCallArg
 syntax cluster props add=javascriptCacheMethod
