@@ -21,7 +21,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -x "/usr/libexec/java_home" ]; then
-  JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+  JAVA_HOME=`/usr/libexec/java_home`
   export JAVA_HOME
 fi
 
