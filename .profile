@@ -31,6 +31,10 @@ if [ -d "$HOME/.rvm/bin" ]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
 
+if [ -x "/usr/local/bin/rbenv" -a "$HOME/.rbenv/shims" ]; then
+  eval "$(rbenv init -)"
+fi
+
 if [ -d "/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin" ]; then
   PATH="$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin"
 fi
