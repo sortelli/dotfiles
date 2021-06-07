@@ -1,5 +1,5 @@
 syntax keyword javascriptGlobal Date nextgroup=javascriptGlobalDateDot,javascriptFuncCallArg
-syntax match   javascriptGlobalDateDot /\./ contained nextgroup=javascriptDateStaticMethod
+syntax match   javascriptGlobalDateDot /\./ contained nextgroup=javascriptDateStaticMethod,javascriptProp,javascriptMethod
 syntax keyword javascriptDateStaticMethod contained UTC now parse nextgroup=javascriptFuncCallArg
 if exists("did_javascript_hilink") | HiLink javascriptDateStaticMethod Keyword
 endif
