@@ -1,4 +1,4 @@
-syntax keyword javascriptGlobal Headers Request Response
+syntax keyword javascriptGlobal Headers Request Response nextgroup=@javascriptAfterIdentifier
 syntax keyword javascriptGlobalMethod fetch nextgroup=javascriptFuncCallArg
 syntax cluster props add=javascriptGlobalMethod
 if exists("did_javascript_hilink") | HiLink javascriptGlobalMethod Structure
@@ -17,6 +17,7 @@ syntax cluster props add=javascriptRequestMethod
 if exists("did_javascript_hilink") | HiLink javascriptRequestMethod Keyword
 endif
 syntax keyword javascriptResponseProp contained type url status statusText headers
+syntax keyword javascriptResponseProp contained redirected
 syntax cluster props add=javascriptResponseProp
 if exists("did_javascript_hilink") | HiLink javascriptResponseProp Keyword
 endif

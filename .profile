@@ -21,7 +21,7 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 if [ -x "/usr/libexec/java_home" ]; then
-  JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+  JAVA_HOME=`/usr/libexec/java_home`
   export JAVA_HOME
 fi
 
@@ -29,6 +29,10 @@ if [ -d "$HOME/.rvm/bin" ]; then
   export PATH="$PATH:$HOME/.rvm/bin"
 
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+fi
+
+if [ -x "/usr/local/bin/rbenv" -a "$HOME/.rbenv/shims" ]; then
+  eval "$(rbenv init -)"
 fi
 
 if [ -d "/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin" ]; then

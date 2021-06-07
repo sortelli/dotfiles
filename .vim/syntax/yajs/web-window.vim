@@ -6,7 +6,8 @@ syntax keyword javascriptBOMWindowProp name navigator opener outerHeight outerWi
 syntax keyword javascriptBOMWindowProp pageXOffset pageYOffset parent performance
 syntax keyword javascriptBOMWindowProp personalbar returnValue screen screenX screenY
 syntax keyword javascriptBOMWindowProp scrollbars scrollMaxX scrollMaxY scrollX scrollY
-syntax keyword javascriptBOMWindowProp self sidebar status statusbar toolbar top window
+syntax keyword javascriptBOMWindowProp self sidebar status statusbar toolbar top visualViewport
+syntax keyword javascriptBOMWindowProp window
 syntax cluster props add=javascriptBOMWindowProp
 if exists("did_javascript_hilink") | HiLink javascriptBOMWindowProp Structure
 endif
@@ -16,6 +17,7 @@ syntax keyword javascriptBOMWindowMethod find focus getAttention getAttentionWit
 syntax keyword javascriptBOMWindowMethod getComputedStyle getDefaulComputedStyle getSelection nextgroup=javascriptFuncCallArg
 syntax keyword javascriptBOMWindowMethod matchMedia maximize moveBy moveTo open openDialog nextgroup=javascriptFuncCallArg
 syntax keyword javascriptBOMWindowMethod postMessage print prompt removeEventListener nextgroup=javascriptFuncCallArg
+syntax keyword javascriptBOMWindowMethod requestAnimationFrame requestIdleCallback nextgroup=javascriptFuncCallArg
 syntax keyword javascriptBOMWindowMethod resizeBy resizeTo restore scroll scrollBy nextgroup=javascriptFuncCallArg
 syntax keyword javascriptBOMWindowMethod scrollByLines scrollByPages scrollTo setCursor nextgroup=javascriptFuncCallArg
 syntax keyword javascriptBOMWindowMethod setImmediate setInterval setResizable setTimeout nextgroup=javascriptFuncCallArg
