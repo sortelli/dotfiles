@@ -31,7 +31,10 @@ if [ -d "$HOME/.rvm/bin" ]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
 
-if [ -x "/usr/local/bin/rbenv" -a "$HOME/.rbenv/shims" ]; then
+if [ -d "$HOME/.rbenv/shims" ]; then
+  if [ -d "${HOME}/.rbenv/bin" ]; then
+    export PATH="$PATH:$HOME/.rbenv/bin"
+  fi
   eval "$(rbenv init -)"
 fi
 
