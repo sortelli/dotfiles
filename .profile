@@ -43,10 +43,6 @@ if [ -f "$HOME/.venvburrito/startup.sh" ]; then
   . "$HOME/.venvburrito/startup.sh"
 fi
 
-if [ -s "$HOME/.profile_local" ]; then
-  . "$HOME/.profile_local"
-fi
-
 if [ -d "$HOME/go" ]; then
   GOPATH="$HOME/go"
   export GOPATH
@@ -63,4 +59,8 @@ fi
 if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   . "$NVM_DIR/nvm.sh"
+fi
+
+if [ -s "$HOME/.profile_local" ]; then
+  . "$HOME/.profile_local"
 fi
