@@ -31,7 +31,10 @@ if [ -d "$HOME/.rvm/bin" ]; then
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
 
-if [ -x "/usr/local/bin/rbenv" -a "$HOME/.rbenv/shims" ]; then
+if [ -d "$HOME/.rbenv/shims" ]; then
+  if [ -d "${HOME}/.rbenv/bin" ]; then
+    export PATH="$PATH:$HOME/.rbenv/bin"
+  fi
   eval "$(rbenv init -)"
 fi
 
@@ -41,10 +44,6 @@ fi
 
 if [ -f "$HOME/.venvburrito/startup.sh" ]; then
   . "$HOME/.venvburrito/startup.sh"
-fi
-
-if [ -s "$HOME/.profile_local" ]; then
-  . "$HOME/.profile_local"
 fi
 
 if [ -d "$HOME/go" ]; then
@@ -63,4 +62,8 @@ fi
 if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   . "$NVM_DIR/nvm.sh"
+fi
+
+if [ -s "$HOME/.profile_local" ]; then
+  . "$HOME/.profile_local"
 fi
