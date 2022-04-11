@@ -42,6 +42,11 @@ if [ -d "$HOME/.rbenv/shims" ]; then
   eval "$(rbenv init -)"
 fi
 
+if [ -d "$HOME/.volta/bin" ]; then
+  export VOLTA_HOME="$HOME/.volta"
+  export PATH="$VOLTA_HOME/bin:$PATH"
+fi
+
 if [ -d "/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin" ]; then
   PATH="$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin"
 fi
