@@ -76,3 +76,7 @@ fi
 if [ -s "$HOME/.profile_local" ]; then
   . "$HOME/.profile_local"
 fi
+
+if [ -s "$HOME/.cargo/env" ]; then
+  . "$HOME/.cargo/env"
+fi
