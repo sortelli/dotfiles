@@ -69,8 +69,11 @@ if [ -d "/usr/local/opt/go/libexec/bin" ]; then
 fi
 
 if [ -d "$HOME/.nvm" ]; then
+  export MODULAR_HOME="$HOME/.modular"
+  export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
   export NVM_DIR="$HOME/.nvm"
   . "$NVM_DIR/nvm.sh"
+  . "$NVM_DIR/bash_completion"
 fi
 
 if [ -s "$HOME/.profile_local" ]; then
