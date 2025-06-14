@@ -3,6 +3,7 @@ export PS1='% '
 export CLICOLOR=1
 export LSCOLORS=cxfxexdxbxegedabaggxad
 export EDITOR=`which vim`
+export BASH_SILENCE_DEPRECATION_WARNING=1
 set -o vi
 
 alias hlog='git log --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
