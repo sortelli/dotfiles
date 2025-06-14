@@ -10,6 +10,10 @@ alias xlog='git log --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(r
 alias slog='git log --stat --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
 alias mlog='git log --all --graph --format="%C(yellow)%h %C(red)%d %C(reset)%s"'
 
+alias wrangler='npx wrangler'
+alias prettier='npx prettier'
+alias spell='aspell list'
+
 if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
         . "$HOME/.bashrc"
