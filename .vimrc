@@ -1,4 +1,5 @@
 let g:jsx_ext_required = 0
+let g:vim_markdown_folding_disabled = 1
 
 :colorscheme torte
 :filetype plugin on
