@@ -7,4 +7,4 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set wildmode=longest,list
 set wildmenu
 
-command Prr :1,$! prettier --stdin-filepath="%"
+command Prr :1,$! npx prettier --stdin-filepath="%"
