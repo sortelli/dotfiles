@@ -11,5 +11,8 @@
     "plaintext": false,
     "scminput": false
   },
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "files.exclude": {
+    "**/*.swp": true
+  }
 }
