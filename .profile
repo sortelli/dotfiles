@@ -25,6 +25,10 @@ if [ -x "/opt/homebrew/bin/brew" ] ; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
