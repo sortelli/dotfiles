@@ -77,6 +77,12 @@ if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   . "$NVM_DIR/nvm.sh"
   . "$NVM_DIR/bash_completion"
+
+  # terminal started by vscode
+  if [ "$__CFBundleIdentifier" = "com.microsoft.VSCode" ]; then
+    # set node version based on .nvmrc
+    [ -r ./.nvmrc ] && nvm use
+  fi
 fi
 
 if [ -s "$HOME/.profile_local" ]; then
