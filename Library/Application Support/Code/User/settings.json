@@ -1,8 +1,5 @@
 {
   "diffEditor.renderSideBySide": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.indentSize": "tabSize",
-  "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "git.openRepositoryInParentFolders": "prompt",
   "github.copilot.enable": {
@@ -14,5 +11,8 @@
   "workbench.startupEditor": "none",
   "files.exclude": {
     "**/*.swp": true
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
   }
 }
