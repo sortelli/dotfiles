@@ -6,14 +6,9 @@ export EDITOR=`which vim`
 export BASH_SILENCE_DEPRECATION_WARNING=1
 set -o vi
 
-alias hlog='git log --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
-alias xlog='git log --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
-alias slog='git log --stat --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
-alias mlog='git log --all --graph --format="%C(yellow)%h %C(red)%d %C(reset)%s"'
-
-alias wrangler='npx wrangler'
-alias prettier='npx prettier'
-alias spell='aspell list'
+if [ -f "$HOME/.bash_aliases" ]; then
+  . ~/.bash_aliases
+fi
 
 if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
