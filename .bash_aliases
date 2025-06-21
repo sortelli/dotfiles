@@ -1,6 +1,6 @@
-alias hlog='git log --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
-alias xlog='git log --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
-alias slog='git log --stat --all --graph --format="%C(yellow)%h %C(reset)%an %C(blue)%ar %C(red)%d %C(reset)%s"'
+alias hlog='git log --all --graph --format="%C(yellow)%h %C(reset)%aN %C(blue)%ar %C(red)%d %C(reset)%s"'
+alias xlog='git log --graph --format="%C(yellow)%h %C(reset)%aN %C(blue)%ar %C(red)%d %C(reset)%s"'
+alias slog='git log --stat --all --graph --format="%C(yellow)%h %C(reset)%aN %C(blue)%ar %C(red)%d %C(reset)%s"'
 alias mlog='git log --all --graph --format="%C(yellow)%h %C(red)%d %C(reset)%s"'
 
 alias prettier='npx prettier'
