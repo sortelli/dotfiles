@@ -22,5 +22,6 @@
         "plaintext",
         "scminput"
     ],
-    "workbench.activityBar.orientation": "vertical"
+    "workbench.activityBar.orientation": "vertical",
+    "vite.autoStart": false
 }
