@@ -1,0 +1,26 @@
+{
+    "diffEditor.renderSideBySide": false,
+    "explorer.confirmDelete": false,
+    "git.openRepositoryInParentFolders": "prompt",
+    "github.copilot.enable": {
+        "*": false,
+        "markdown": false,
+        "plaintext": false,
+        "scminput": false
+    },
+    "workbench.startupEditor": "none",
+    "files.exclude": {
+        "**/*.swp": true
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "gitlab.duoCodeSuggestions.enabled": false,
+    "gitlab.duoChat.enabled": false,
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "plaintext",
+        "scminput"
+    ],
+    "workbench.activityBar.orientation": "vertical"
+}
